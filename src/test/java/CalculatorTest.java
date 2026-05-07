@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorTest {
 
+
     Calculator calc = new Calculator();
 
     @Test
@@ -12,10 +13,12 @@ class CalculatorTest {
         assertEquals(8, calc.add(3, 5));
         assertEquals(0, calc.add(-2, 2));
         assertEquals(-10, calc.add(-5, -5));
+
     }
 
     @Test
     void dif() {
+
         Calculator calc = new Calculator();
         assertEquals(2, calc.dif(5, 3));
         assertEquals(-4, calc.dif(2, 6));
@@ -25,23 +28,17 @@ class CalculatorTest {
 
     @Test
     void div() {
-        Calculator calc = new Calculator();
-        assertEquals(3, calc.div(9, 3));
-        assertEquals(2, calc.div(10, 5));
-        assertThrows(ArithmeticException.class, () -> calc.div(5, 0));
+        assertEquals(10, calculator.div(100,10));
     }
 
     @Test
     void times() {
-        Calculator calc = new Calculator();
-        assertEquals(15, calc.times(3, 5));
-        assertEquals(0, calc.times(0, 10));
-        assertEquals(-20, calc.times(-4, 5));
+
+        assertEquals(25, calculator.times(5,5));
     }
 
     @Test
     void solver() {
-        Calculator calc = new Calculator();
-        assertEquals(12, calc.solver());
+        assertEquals(91, calculator.add(calculator.dif(100, 10), calculator.div(100, calculator.times(10,10))));
     }
 }

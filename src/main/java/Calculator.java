@@ -20,6 +20,9 @@ public class Calculator {
     }
 
     public int solver(){
-        return times(div(24,6),dif(7,add(1,3)));
+
+
+        return add(dif(100, 10), div(100, times(10,10)));
+
     }
 }
