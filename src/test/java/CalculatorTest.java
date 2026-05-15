@@ -23,17 +23,17 @@ class CalculatorTest {
 
     @Test
     void div() {
-        assertEquals(10, calculator.div(100,10));
+        assertEquals(10, calc.div(100,10));
     }
 
     @Test
     void times() {
 
-        assertEquals(25, calculator.times(5,5));
+        assertEquals(25, calc.times(5,5));
     }
 
     @Test
     void solver() {
-        assertEquals(91, calculator.add(calculator.dif(100, 10), calculator.div(100, calculator.times(10,10))));
+        assertEquals(91, calc.add(calc.dif(100, 10), calc.div(100, calc.times(10,10))));
     }
 }
