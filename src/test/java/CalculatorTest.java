@@ -5,8 +5,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class CalculatorTest {
 
 
-    Calculator calc = new Calculator();
-
     @Test
     void add() {
         Calculator calc = new Calculator();
